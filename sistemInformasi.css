@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+a {
+    color: black;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul div {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav ul div li {
+    width: 1rem;
+    height: 1rem;
+    background-color: blue;
+}
+
+nav ul div .nama {
+    font-weight: 800;
+    font-family: 'poppins';
+}
+
+nav ul div p {
+    font-size: 1.1rem;
+}
+
+nav ul li {
+    font-family: 'poppins';
+    font-weight: 300;
+    font-size: .9rem;
+    cursor: pointer;
+
+}
+nav ul li:hover {
+    color: blue;
+    transition: all .1s ease-in .01s;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 10rem 0 5rem 0;
+    justify-content: center;
+    padding: 5rem;
+}
+
+section div {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section div h1::before {
+    content: '* ';
+    color: blue;
+}
+
+section div button {
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 100rem;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border-bottom-width: 1px;
+    border-bottom-style: ridge;
+}
+
+th, td {
+    padding: .5rem;
+}
+
+th {
+    background-color: rgb(235, 235, 235);
+    font-weight: 600;
+    font-size: .9rem;
+    padding: 1.5rem .5rem;
+    border-right-style: ridge;
+    border-right-width: 1px;
+}
+
+td {
+    font-size: .9rem;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+td button {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 100rem;
+    font-size: .8rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+td .btnEdit {
+    background-color: yellow;
+    color: black;
+}
+
+td .btnHapus {
+    background-color: red;
+    color: white;
+
+}
+
+tbody tr:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+section button.normalisasi {
+    width: fit-content;
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 100rem;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 auto;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7rem 2rem 3rem;
+    gap: 5rem;
+    background-color: white;
+}
+
+footer .copyright {
+    font-size: .8rem;
+}
+
+footer .copyright p span {
+    text-decoration: underline;
+}
+
+footer .foot {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+footer .foot div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    font-size: .9rem;
+}
+
+footer .foot div h4 {
+    font-weight: 600;
+}
+
+footer .foot div p {
+    font-size: .8rem;
+}
+
+footer .foot div a {
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+footer .foot div ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+footer .foot div ul .fa {
+    cursor: pointer;
+    font-size: 1rem;
+}
